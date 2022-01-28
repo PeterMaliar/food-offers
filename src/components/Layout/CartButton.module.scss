@@ -1,0 +1,53 @@
+.cart-btn {
+   padding: 1.2rem 4.8rem;
+   border-radius: 5rem;
+   background-color: var(--color-cartButton-background);
+   border: none;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+   width: 25rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   .icon {
+      width: 2rem;
+      height: 2rem;
+   }
+   .badge {
+      display: block;
+      padding: .4rem 1.6rem;
+      border-radius: 2.5rem;
+      background-color: var(--color-badge-background);
+   }
+   &:hover,
+   &:active {
+      cursor: pointer;
+      background-color: var(--color-cartButton-hover);
+      & .badge {
+         background-color: var(--color-badge-hover);
+      }
+   }
+}
+
+.bump {
+   animation: bump 300ms ease-out;
+}
+ 
+@keyframes bump {
+   0% {
+      transform: scale(1);
+   }
+   10% {
+      transform: scale(0.9);
+   }
+   30% {
+      transform: scale(1.1);
+   }
+   50% {
+      transform: scale(1.15);
+   }
+   100% {
+      transform: scale(1);
+   }
+}

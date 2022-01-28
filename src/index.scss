@@ -1,0 +1,30 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+}
+
+:root {
+	font-size: 62.5%; // 1rem = 10px   10px/16px = 62.5%
+
+	// COLOR VARIABLES
+	--color-primary: #8a2b06;
+
+	--color-cartButton-hover: #2c0d00;
+   --color-button-hover: #5a1a01;
+	--color-cartButton-background: #4d1601;
+
+	--color-badge-background: #b94517;
+	--color-badge-hover: #92320c;
+
+	--color-summary-background: #383838;
+   --color-button-disabled: #777;
+}

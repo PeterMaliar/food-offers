@@ -1,0 +1,35 @@
+.form {
+   margin: 1rem 0;
+   overflow: auto;
+   height: 17rem;
+   position: relative;
+   .info {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      color: green;
+   }
+   .info.error {
+      color: red;
+   }
+   .control {
+      margin-bottom: .5rem;
+      label {
+         font-weight: bold;
+         display: block;
+      }
+      input {
+         width: 90%;
+         max-width: 30rem;
+         &.invalid {
+            border: 2px solid red;
+         }
+      }
+      .error-message {
+         color: red;
+         display: inline-block;
+         margin-left: 1rem;
+      }
+   }
+}

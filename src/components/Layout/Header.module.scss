@@ -1,0 +1,39 @@
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	color: white;
+	background-color: var(--color-primary);
+
+	height: 8rem;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 10%;
+	box-shadow: 0 2px 8px rgba($color: #000000, $alpha: 0.25);
+
+	z-index: 10;
+}
+
+.logo {
+	color: inherit;
+	font-size: 3.5rem;
+}
+
+.main-image {
+	width: 100%;
+	height: calc(25rem * 16 / 10);
+	overflow: hidden;
+	z-index: 3;
+	img {
+		width: 110%;
+		height: 100%;
+		object-fit: cover;
+		// clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+		transform: rotateZ(-5deg) translateY(-6.4rem) translateX(-1.6rem);
+	}
+}
